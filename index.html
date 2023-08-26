@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="ques">  
+            </div>
+            <div class="opt">
+                <div class="cnt">
+                    <input type="radio" name="option" class="a" value="a"><p id="a"></p>
+                </div>
+                <div class="cnt">
+                    <input type="radio" name="option" class="b" value="b"><p id="b"></p>
+                </div>
+                <div class="cnt">
+                    <input type="radio" name="option" class="c" value="c"><p id="c"></p>
+                </div>
+                <div class="cnt">
+                    <input type="radio" name="option" class="d" value="d"><p id="d"></p>
+                </div>   
+            </div>
+            <div class="btncont">
+                <button class="btn" onclick="checkAnswer()">
+                    SUBMIT
+                </button>
+            </div>
+           
+        </div>
+
+        <div class="popup">
+            <button id="okbtn">OK</button>
+        </div>
+
+        <div class="score">
+            <h1>प्रश्न संपले</h1>
+            <div class="resultdiv">
+                <h1>निकालपत्रक</h1>
+                <h2></h2>
+            </div>
+            <button id="btnclose">CLOSE</button>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
