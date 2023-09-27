@@ -150,7 +150,7 @@ function getAnswer(){
 function winnerPopUp(){
     const msg = document.createElement('h2')
     const image = document.createElement("img")
-    msg.innerText="नडलीस ऋतुजा 🥳 उत्तर बरोबर आहे"
+    msg.innerText="Congratulations 🥳 Correct answer"
     popup.appendChild(msg)
     popup.appendChild(image)
     image.classList="popImg"
@@ -184,8 +184,8 @@ function looserPopUp(){
     const msg = document.createElement('h2')
     const msg2 = document.createElement('h2')
     const image = document.createElement("img")
-    msg.innerText="अभ्यास कर ऋतुजा 🤨💀 तुझे उत्तर चुकीचे आहे "
-    msg2.innerText=`योग्य उत्तर: ${questions[index][answer]}`
+    msg.innerText="Oppps 🤨💀 Wrong answer "
+    msg2.innerText=`correct ans: ${questions[index][answer]}`
     popup.appendChild(msg2)
     popup.appendChild(msg)
     popup.appendChild(image)
